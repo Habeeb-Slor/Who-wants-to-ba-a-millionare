@@ -18,6 +18,14 @@
   max-width: 400px !important;
   border-radius: 80px ;
 }
-.question{
-  
+.option :hover{
+  cursor: pointer;
+  background-color: black;
 }
+.question-bar{
+  position: relative;
+  top: 60%;
+}
+/* .question{
+  bac
+} */

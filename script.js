@@ -53,7 +53,15 @@ let questionBank = [
 
 let i = 0;
 let mySong = new Audio('Audio/playing.mp3')
+let score = 5000;
 
+let wrongSong = new Audio('Audio/wrong.mp3')
+let rightSong = new Audio('Audio/correct.mp3')
+let deleteTwo = new Audio('50-50_sound.mp3')
+let closingSong = new Audio('Closing Theme_sound.mp3')
+let audienceSong = new Audio('Ask The Audience_sound.mp3')
+let friendSong = new Audio('Phone-A-Friend_sound.mp3')
+let timeUpSong = new Audio('Time_Up_sound.mp3')
 
 
 function displayQuestion(){
@@ -62,6 +70,19 @@ function displayQuestion(){
   option_2.innerHTML = questionBank[i].option[1];
   option_3.innerHTML = questionBank[i].option[2];
   option_4.innerHTML = questionBank[i].option[3];
-  mySong.play()
 }
 displayQuestion()
+
+function calcScore(e){
+  if(e.innerHTML === questionBank[i].answer && score > questionBank.length){
+      score += 5000;
+      document.getElementById(e.id).style.background = 'limegreen';
+      rightSong.play()
+  }
+  else{
+      wrongSong.play()
+      document.getElementById(e.id).style.background = 'tomato';
+     setTimeout(() => {window.location.href = "gameover.html"} ,1700)
+  }
+  setTimeout(nextQuestion,2000);
+}
