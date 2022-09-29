@@ -31,7 +31,7 @@
   /* background-color: black;
   background-color: transparent; */
 }
-.question-bar{
+.question_bar{
   position: relative;
   top: 60%;
 }
@@ -42,3 +42,30 @@
 /* .question{
   bac
 } */
+#won{
+  position: relative;
+  top: 60%;
+  padding: 20px;
+  text-align: center;
+}
+.congracts{
+  animation: congratulate 2s infinite running ;
+}
+@keyframes congratulate{
+  10%{
+    color: green;
+  }
+  25%{
+    color: blue;
+  }
+  50%{
+    color: aqua;
+  }
+  75%{
+    color: cyan;
+  }
+  100%{
+    color: #b5f20e
+  }
+
+}

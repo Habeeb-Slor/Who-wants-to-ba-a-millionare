@@ -10,17 +10,18 @@
   </head>
   <body onload="mySong.play" class="lobby">
     
-    <div class="container question-bar w-75">
+    <div class="container question_bar w-75" id="question_body">
       <div class="question p-3 text-center bg-dark text-light" id="question"></div>
       <div class="container options p-3 ">
         <ul type="none" class="">
-          <li class="option fw-bold bg-dark text-light text-center"><button class="w-100" id="option_1" onclick="calcScore(this)"></button></li>
-          <li class="option fw-bold bg-dark text-light text-center"><button class="w-100" id="option_2" onclick="calcScore(this)"></button></li>
-          <li class="option fw-bold bg-dark text-light text-center"><button class="w-100" id="option_3" onclick="calcScore(this)"></button></li>
-          <li class="option fw-bold bg-dark text-light text-center"><button class="w-100" id="option_4" onclick="calcScore(this)"></button></li>
+          <li class="option fw-bold bg-dark text-light text-center"><button title="bruh" class="w-100" id="option_1" onclick="calcScore(this)"></button></li>
+          <li class="option fw-bold bg-dark text-light text-center"><button title="bruh" class="w-100" id="option_2" onclick="calcScore(this)"></button></li>
+          <li class="option fw-bold bg-dark text-light text-center"><button title="bruh" class="w-100" id="option_3" onclick="calcScore(this)"></button></li>
+          <li class="option fw-bold bg-dark text-light text-center"><button title="bruh" class="w-100" id="option_4" onclick="calcScore(this)"></button></li>
       </ul>
       </div>
     </div>
+    <div class="container bg-dark" id="won"></div>
 
     <script src="script.js"></script>
   </body>
