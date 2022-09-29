@@ -5,24 +5,24 @@ let questionBank = [
       answer : 'Health'
   },
   {
-      question : 'Eritrea, which became the 182nd member of the UN in 1993, is in the continent of',
-      option : ['Asia','Africa','Europe','Australia'],
-      answer : 'Africa'
+      question : 'Which Disney character famously leaves a glass slipper behind at a royal ball?',
+      option : ['Pocahontas','Sleeping Beauty','Cinderella','Elsa'],
+      answer : 'Cinderella'
     },
     {
-      question : 'For which of the following disciplines is Nobel Prize awarded?',
-      option : ['Physics and Chemistry','All of the above','Literature, Peace and Economics','Physiology or Medicine'],
-      answer : 'All of the above'
+      question : 'What name is given to the revolving belt machinery in an airport that delivers checked luggage from the plane to baggage reclaim?',
+      option : ['Hangar','Terminal', 'Concourse','Carousel'],
+      answer : 'Carousel'
   },
   {
-      question : 'Exposure to sunlight helps a person improve his health because',
-      option : ['the infrared light kills bacteria in the body','the ultraviolet rays convert skin oil into Vitamin D','resistance power increases','the pigment cells in the skin get stimulated and produce a healthy tan'],
-      answer : 'the ultraviolet rays convert skin oil into Vitamin D'
+      question : 'Which of these brands was chiefly associated with the manufacture of household locks?',
+      option : ['Phillips','Flymo','Ronseal','Chubb'],
+      answer : 'Chubb'
   },
   {
-      question: 'Philology is the',
-      option : ['study of bones','science of languages','study of muscles','study of architecture'],
-      answer : 'science of languages'
+      question: 'The hammer and sickle is one of the most recognisable symbols of which political ideology?',
+      option : ['Republicanism','Communism','Conservatism','Liberalism'],
+      answer : 'Communism'
   },
   {
       question: 'Which of these teams never won the Uefa Champions League',
@@ -35,9 +35,9 @@ let questionBank = [
       answer : 'Neil Armstrong'
   },
   {
-      question: 'ICAO stands for',
-      option : ['Indian Corporation of Agriculture Organization','International Civil Aviation Organization','Institute of Company of Accounts Organization','None of the above'],
-      answer : 'International Civil Aviation Organization'
+      question: ' What does the word loquacious mean?',
+      option : ['Angry','Chatty','Beautiful','Shy'],
+      answer : 'Chatty'
   },
   {
       question: 'What is 3(2-1)',
