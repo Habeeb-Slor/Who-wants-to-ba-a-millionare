@@ -1,3 +1,23 @@
 .login{
   background-image: url(Img/2d5061fd83cd2bb1574aa3ffde9c06ee.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.lobby{
+  background-image: url(Img/lobby-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.options{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.option{
+  max-width: 400px !important;
+  border-radius: 80px ;
+}
+.question{
+  
 }
