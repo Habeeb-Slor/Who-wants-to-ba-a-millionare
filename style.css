@@ -10,22 +10,35 @@
   background-repeat: no-repeat;
   height: 100vh;
 }
-.options{
+.options ul{
   display: grid;
   grid-template-columns: auto auto;
 }
 .option{
   max-width: 400px !important;
   border-radius: 80px ;
+  margin-bottom: 10px;
+  height: 10vh;
+}
+.option button{
+  width: 100%;
+  height: 100%;
+  background-color: blueviolet;
 }
 .option :hover{
   cursor: pointer;
-  background-color: black;
+  background-color: purple;
+  /* background-color: black;
+  background-color: transparent; */
 }
 .question-bar{
   position: relative;
   top: 60%;
 }
+/* .options ul li{
+  margin-bottom: 10px;
+  max
+} */
 /* .question{
   bac
 } */

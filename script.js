@@ -54,6 +54,8 @@ let questionBank = [
 let i = 0;
 let mySong = new Audio('Audio/playing.mp3')
 let score = 5000;
+let next = document.querySelector('.next');
+let span = document.querySelectorAll('button');
 
 let wrongSong = new Audio('Audio/wrong.mp3')
 let rightSong = new Audio('Audio/correct.mp3')
@@ -85,4 +87,31 @@ function calcScore(e){
      setTimeout(() => {window.location.href = "gameover.html"} ,1700)
   }
   setTimeout(nextQuestion,2000);
+}
+var countDown =()=>{
+  let countedSecs = secs.value;
+  countedSecs-- ;
+  secs.value =  countedSecs
+  myTimeout = setTimeout(countDown, 1000)
+  if(countedSecs==0){
+      gameOver.innerHTML = "Time Up"
+      gameOver.style.color = "red"
+      secs.value = "00"
+      secs.style.color = "red"
+      clearInterval(myTimeout)
+      setTimeout(() => {
+          location.reload()
+      }, 1150);
+  }
+}
+function nextQuestion(){
+  if(i < questionBank.length - 1){
+      i += 1
+      displayQuestion();
+  }
+  else{
+      points.innerHTML =`Congratulations you have earned $ ${score}`;
+      quizContainer.style.display = 'none'
+      scoreboard.style.display = "block"
+  }
 }
